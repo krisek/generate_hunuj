@@ -1,8 +1,8 @@
 #gen_hunuj.sh
 
-Ez a shell/Perl alkalmazás páros SWORD modult készít a http://bibliamindenkie.hu oldalon található Revideált Újfordítású Biblia szövegéből.
+Ez a shell/Perl alkalmazás páros SWORD modult készít a http://abibliamindenkie.hu oldalon található Revideált Újfordítású Biblia szövegéből.
 
-A modul elkészítése négy munkafázisból áll. 
+A modul elkészítése négy munkafázisból áll.
 
 1. függőségek ellenőrzése, telepítése
 2. a forrás HTML fájlok letöltése
@@ -11,7 +11,7 @@ A modul elkészítése négy munkafázisból áll.
 
 Az egyes munkafázisok a gen_hunuj.sh fájlban kerültek implementálásra, kivéve az Osis/XML dokumentum elkészítését, amelyért a gensword.pl Perl alakalmazás felel.
 
-A modul elkészítése egyszerű, csak a gen_hunuj.sh parancsot kell lefuttatnunk, amikor ez végzett, a munkakönyvtárban egy hunuj.zip nevű állományban található a Sword modul. 
+A modul elkészítése egyszerű, csak a gen_hunuj.sh parancsot kell lefuttatnunk, amikor ez végzett, a munkakönyvtárban egy hunuj.zip nevű állományban található a Sword modul.
 
 Amennyiben valamilyen okból a szkriptet többször szeretnénk futtatni, a forrás HTML fájlok letöltése a --mirror=no paraméter megadásával kikapcsolható.
 
@@ -22,5 +22,7 @@ Az elkészült modult ezután kézzel kell telepíteni valamilyen Sword formátu
 > A legtöbb Linuxos alkalmazásnak elég, ha a $HOME/.sword könyvtárba bemásoljuk a modulból a modules és mods.d könyvtárak tartalmát (mkdir $HOME/.sword; cp -a hunuj/* $HOME/.sword/).
 
 ##Figyelmeztetés
+A modul helyettesíti a már esetleg telepített HunUj modult. TODO: fix this
+
 A progam futtatásából származó bárminemű kárért semmilyen felelőséget nem vállalok!
 
